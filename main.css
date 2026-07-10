@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    height: 2000px;
+}
+
+#some_block{
+    position:absolute;
+    background: red;
+    color: #fff;
+    text-align: center;
+    width:50px ;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    left: 30px;
+    top: 75px;
+}
+
+
+
+#header, #footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    border-bottom: 4px solid silver;
+    background: #333;
+    color: #fff;
+    line-height: 100px ;
+    margin-bottom: 50px;
+    float: left;
+    left: 20px;
+    top: 50px;
+    
+}
+
+
+#nav {
+    list-style: none;
+    display: block;
+    float: left;
+    width:50% ;
+    margin-left: 25%;
+    text-align: center;
+    margin-bottom: 50px;
+
+
+}
+
+
+#nav li {
+    display: inline;
+    background: #fafafa;
+    border: 1px solid silver ;
+    padding:0 20px ;
+cursor: pointer;
+
+}
+#nav li:hover {
+    color: #fff;
+    background:#333 ;
+    border-radius: 5px;
+    border-color: #333;
+
+}
+
+
+#nav li:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+
+
+#main {
+    width: 50%;
+    margin-left: 2%;
+    background: #fafafa;
+    border: 1px solid silver; 
+    padding: 20px 2.5%;
+    float: left;
+    z-index: 1 ;
+    position: relative;
+}
+
+#aside {
+        width: 30% ;
+        padding: 10px 2.5%;
+         background: #fafafa;
+    border: 1px solid silver; 
+    float: left;
+    margin-left: 50px;
+    position:relative;
+    left: 20px;
+    z-index: 0;
+    position: relative;
+    top: 23px;
+}
+
+
+
+#footer {
+    margin-bottom: 0;
+    margin-top: 50px;
+    border-bottom: 0 ;
+
+}
+
+
