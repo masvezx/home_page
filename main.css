@@ -4,9 +4,7 @@
 
 }
 
-body{
-    height: 2000px;
-}
+
 
 #some_block{
     position:absolute;
@@ -88,18 +86,22 @@ cursor: pointer;
 
 #aside {
         width: 30% ;
-        padding: 10px 2.5%;
+        padding: 10px ;
          background: #fafafa;
     border: 1px solid silver; 
     float: left;
-    margin-left: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     position:relative;
-    left: 20px;
+    left: 0px;
     z-index: 0;
-    position: relative;
     top: 23px;
 }
 
+#photo_5947410531431943638_y.jpg {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 
 #footer {
