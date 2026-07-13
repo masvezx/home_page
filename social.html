@@ -1,64 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Социальные сети</title>
-    <link rel="stylesheet" href="main.css">
-
-    <!-- <style>
-        b{
-            color:red;
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .social-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10%;
+            margin-top: 1rem;
         }
-    </style> -->
-
-
+        .social-button {
+            width: calc((100% - 20%) / 3);
+            height: 140px;
+            border-radius: 20px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            border: 1px solid rgba(0,0,0,0.12);
+        }
+        .social-button img {
+            width: 72px;
+            height: 72px;
+            object-fit: contain;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="some_block">+</div>
-    <div id="header">Hi and welcome to my page!!!</div>
-    <ul id="nav">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="aboutme.html">Про меня</a></li>
-        <li><a href="social.html">Соцсети</a></li>
-    </ul>
-    <div id="main"><h2>Социальные сети</h2>
-        <div>
-            <br>
-            <p>
-
-            </p>
-            <br>
-            <p>
-                
-            </p>
-            <br>
-            <p>
-               
-            </p>
+    <section class="hero is-dark is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Hi and welcome to my page!!!</h1>
+            </div>
         </div>
-    </div>
-   
-    <div id="aside">Боковая часть
-        <div>
-            <br>
-            <p>
-               
-            </p>
-            <br>
-            <p>
-                
-            </p>
-            <br>
-            <p>
-               
-            </p>
-        </div>
-    </div>
-<div id="footer">Футер</div>
+    </section>
 
+    <section class="section">
+        <div class="container">
+            <div class="buttons is-centered">
+                <a class="button is-light" href="index.html">Главная</a>
+                <a class="button is-light" href="aboutme.html">Про меня</a>
+                <a class="button is-link" href="social.html">Соцсети</a>
+            </div>
+
+            <div class="box has-text-centered">
+                <h2 class="title is-4">Мои социальные сети</h2>
+                <div class="social-row">
+                    <a class="button is-light social-button" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram logo">
+                    </a>
+                    <a class="button is-light social-button" href="https://t.me" target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram logo">
+                    </a>
+                    <a class="button is-light social-button" href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/TikTok_logo.svg" alt="TikTok logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>Футер</p>
+        </div>
+    </footer>
 </body>
 
 </html>
