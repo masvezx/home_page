@@ -1,85 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML + CSS</title>
+    <title>Главная</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="main.css">
-
-    
-
-
+    <style>
+        html, body {
+            min-height: 100vh;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        body > .section {
+            flex: 1;
+        }
+        .footer.is-dark {
+            background-color: #363636;
+            color: #fff;
+            padding: 1.5rem;
+        }
+        .navbar-item {
+            font-size: 1.25rem;
+            padding: 0.75rem 1.5rem;
+        }
+        .media-box {
+            background: #f5f5f5;
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            color: #888;
+            margin-bottom: 1rem;
+        }
+        .media-box__title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .content p {
+            font-size: 1.25rem;
+        }
+        @media screen and (max-width: 768px) {
+            .hero-body {
+                padding: 1.5rem;
+            }
+            .section {
+                padding: 1rem 1.5rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div id="header">Привет! Добро пожаловать на мою страницу — рада тебя видеть!</div>
-    <ul id="nav">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="aboutme.html">Про меня</a></li>
-        <li><a href="social.html">Соцсети</a></li>
-    </ul>
-    <div id="main"><h2>Основная информация</h2>
-        <div>
-            <br>
-            <p>
-                Приветик! Меня зовут Мария (для друзей и родных Маша) и сейчас я расскажу немного о себе. Я родилась в Москве, прожила там около одиннадцати лет, затем два года жила в Сербии, а сейчас живу в Германии. Каждый переезд подарил мне новый опыт, друзей и воспоминания.
-            </p>
-            <br>
-            <p>
-                После переезда в Сербию я начала играть на гитаре. Меня вдохновили группа «Нервы» и Женя Мильковский. Первой песней, которую я выучила, стала «Районы-кварталы» группы «Звери». Сейчас игра на гитаре помогает мне расслабиться и отвлечься.
-            </p>
-            <br>
-            <p>
-               В сентябре 2024 года я начала заниматься хип-хопом. Мне очень понравился коллектив, а самым ярким моментом стало выступление на соревнованиях. Позже я переехала в Германию и была вынуждена оставить танцы.
-            </p>
-            <br>
-            <p>
-                В марте 2025 года я пошла в немецкую школу и познакомилась с близкими подругами. Больше всего мне нравились уроки готовки и техники, а легче всего давались английский и немецкий языки.
-            </p>
-            <br>
-            <p>
-                Я легко знакомлюсь с новыми людьми, поэтому у меня много друзей. Особенно я ценю в людях открытость, доброту и поддержку. Для меня дружба очень важна, а дом — это люди, рядом с которыми я чувствую себя комфортно.
-            </p>
-
+    <section class="hero is-dark is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Привет! Добро пожаловать на мою страницу — рада тебя видеть!</h1>
+            </div>
         </div>
-    </div>
-   
-    <div id="aside">
-        <div>
-            <br>
-            <p>
-              
-            </p>
-            <br>
-            <div class="media-windows">
-                <div class="media-box">
-                    <div class="media-box__title">Фото 1</div>
-                    <div class="media-box__content">Вставьте сюда изображение</div>
+    </section>
+
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="mainNavbar" class="navbar-menu">
+            <div class="navbar-end" style="flex-grow:1;justify-content:center;">
+                <a class="navbar-item is-active" href="index.html"><strong>Главная</strong></a>
+                <a class="navbar-item" href="aboutme.html">Про меня</a>
+                <a class="navbar-item" href="social.html">Соцсети</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-7">
+                    <div class="content">
+                        <h2 class="title is-4">Основная информация</h2>
+                        <p>
+                            Приветик! Меня зовут Мария (для друзей и родных Маша) и сейчас я расскажу немного о себе. Я родилась в Москве, прожила там около одиннадцати лет, затем два года жила в Сербии, а сейчас живу в Германии. Каждый переезд подарил мне новый опыт, друзей и воспоминания.
+                        </p>
+                        <p>
+                            После переезда в Сербию я начала играть на гитаре. Меня вдохновили группа «Нервы» и Женя Мильковский. Первой песней, которую я выучила, стала «Районы-кварталы» группы «Звери». Сейчас игра на гитаре помогает мне расслабиться и отвлечься.
+                        </p>
+                        <p>
+                            В сентябре 2024 года я начала заниматься хип-хопом. Мне очень понравился коллектив, а самым ярким моментом стало выступление на соревнованиях. Позже я переехала в Германию и была вынуждена оставить танцы.
+                        </p>
+                        <p>
+                            В марте 2025 года я пошла в немецкую школу и познакомилась с близкими подругами. Больше всего мне нравились уроки готовки и техники, а легче всего давались английский и немецкий языки.
+                        </p>
+                        <p>
+                            Я легко знакомлюсь с новыми людьми, поэтому у меня много друзей. Особенно я ценю в людях открытость, доброту и поддержку. Для меня дружба очень важна, а дом — это люди, рядом с которыми я чувствую себя комфортно.
+                        </p>
+                    </div>
                 </div>
-                <div class="media-box">
-                    <div class="media-box__title">Фото 2</div>
-                    <div class="media-box__content">Вставьте сюда изображение</div>
-                </div>
-                <div class="media-box">
-                    <div class="media-box__title">Фото 3</div>
-                    <div class="media-box__content">Вставьте сюда изображение</div>
-                </div>
-                <div class="media-box">
-                    <div class="media-box__title">Видео</div>
-                    <div class="media-box__content">Вставьте сюда видео</div>
+                <div class="column is-5">
+                    <div class="media-box">
+                        <div class="media-box__title">Фото 1</div>
+                        <div class="media-box__content">Вставьте сюда изображение</div>
+                    </div>
+                    <div class="media-box">
+                        <div class="media-box__title">Фото 2</div>
+                        <div class="media-box__content">Вставьте сюда изображение</div>
+                    </div>
+                    <div class="media-box">
+                        <div class="media-box__title">Фото 3</div>
+                        <div class="media-box__content">Вставьте сюда изображение</div>
+                    </div>
+                    <div class="media-box">
+                        <div class="media-box__title">Видео</div>
+                        <div class="media-box__content">Вставьте сюда видео</div>
+                    </div>
                 </div>
             </div>
-            <br>
-            <p>
-                
-            </p>
-            <br>
         </div>
-    </div>
-<div id="footer">Футер</div>
+    </section>
 
+    <footer class="footer is-dark">
+        <div class="content has-text-centered">
+            <p>Этот сайт создан Марией Бирюковой при содействии ИИ-шечки</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.getElementById(burger.dataset.target);
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
 </body>
 
 </html>
