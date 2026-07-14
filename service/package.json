@@ -1,0 +1,17 @@
+{
+  "name": "jsdemo",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@azure/ai-projects": "^2.3.0",
+    "@azure/identity": "^4.0.0",
+    "express": "^5.2.1"
+  }
+}
