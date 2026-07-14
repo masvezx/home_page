@@ -7,6 +7,12 @@
     <title>Главная</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        html {
+            overflow-x: hidden;
+        }
         html, body {
             min-height: 100vh;
         }
@@ -246,8 +252,10 @@
                 bottom: 0;
                 width: auto;
                 height: 100%;
+                max-width: 100%;
                 border-radius: 0;
                 box-sizing: border-box;
+                overscroll-behavior: none;
             }
             #chatbot #chatbot-header {
                 padding-top: calc(0.75rem + env(safe-area-inset-top, 0px));
