@@ -82,6 +82,76 @@
             .section {
                 padding: 1rem 1.5rem;
             }
+            #lang-switcher {
+                top: 70px;
+            }
+        }
+
+        /* Language switcher */
+        #lang-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+        #lang-toggle-btn {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #363636;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s;
+        }
+        #lang-toggle-btn:hover {
+            transform: scale(1.1);
+        }
+        #lang-toggle-btn img,
+        .lang-option img {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        #lang-dropdown {
+            display: none;
+            flex-direction: column;
+            gap: 8px;
+        }
+        #lang-dropdown.is-open {
+            display: flex;
+        }
+        .lang-option {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: #363636;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.2s, opacity 0.2s;
+            animation: langFadeIn 0.2s ease;
+        }
+        .lang-option:hover {
+            transform: scale(1.1);
+        }
+        @keyframes langFadeIn {
+            from { opacity: 0; transform: translateY(-8px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
@@ -191,6 +261,15 @@
         </div>
     </footer>
 
+    <!-- Language Switcher -->
+    <div id="lang-switcher">
+        <button id="lang-toggle-btn" aria-label="Сменить язык"><img src="https://flagcdn.com/w40/ru.png" alt="RU"></button>
+        <div id="lang-dropdown">
+            <a href="/en/aboutme.html" class="lang-option" aria-label="English"><img src="https://flagcdn.com/w40/gb.png" alt="EN"></a>
+            <a href="/de/aboutme.html" class="lang-option" aria-label="Deutsch"><img src="https://flagcdn.com/w40/de.png" alt="DE"></a>
+        </div>
+    </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const burger = document.querySelector('.navbar-burger');
@@ -198,6 +277,18 @@
             burger.addEventListener('click', () => {
                 burger.classList.toggle('is-active');
                 menu.classList.toggle('is-active');
+            });
+
+            // Language switcher
+            const langToggle = document.getElementById('lang-toggle-btn');
+            const langDropdown = document.getElementById('lang-dropdown');
+            langToggle.addEventListener('click', () => {
+                langDropdown.classList.toggle('is-open');
+            });
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('#lang-switcher')) {
+                    langDropdown.classList.remove('is-open');
+                }
             });
         });
     </script>
