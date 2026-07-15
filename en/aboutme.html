@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        html, body {
+            min-height: 100vh;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        body > .section {
+            flex: 1;
+        }
+        .footer.is-dark {
+            background-color: #363636;
+            color: #fff;
+            padding: 1.5rem;
+        }
+        .navbar-item {
+            font-size: 1.25rem;
+            padding: 0.75rem 1.5rem;
+        }
+        .content p {
+            font-size: 1.25rem;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-top: 2rem;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0.75rem;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #dbdbdb;
+            border-radius: 2px;
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2.5rem;
+        }
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+        .timeline-marker {
+            position: absolute;
+            left: -2.5rem;
+            top: 0.25rem;
+            width: 1.75rem;
+            height: 1.75rem;
+            border-radius: 50%;
+            background: #363636;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            z-index: 1;
+        }
+        .timeline-heading {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #363636;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #dbdbdb;
+        }
+        @media screen and (max-width: 768px) {
+            .hero-body {
+                padding: 1.5rem;
+            }
+            .section {
+                padding: 1rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero is-dark is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">About me</h1>
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="mainNavbar" class="navbar-menu">
+            <div class="navbar-end" style="flex-grow:1;justify-content:center;">
+                <a class="navbar-item" href="index.html">Home</a>
+                <a class="navbar-item is-active" href="aboutme.html"><strong>About me</strong></a>
+                <a class="navbar-item" href="social.html">Socials</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">🏠</div>
+                        <div class="timeline-heading">Beginning — Moscow</div>
+                        <p>
+                            I was born on 26.02.2011 in Moscow, Russia. I lived there for about eleven years, then spent two years in Serbia, and now I live in Germany. Each move became an important stage in my life and brought me new experiences, new friends, and memories.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">🎸</div>
+                        <div class="timeline-heading">Music</div>
+                        <p>
+                            After moving to Serbia, I first tried playing the guitar, and it really caught my interest. My love of music was especially influenced by the band “Nervy” and Zhenya Milkovsky. At first I didn’t listen to them very often, but later their songs started appearing in my life almost every day. The song “Happiness” was the piece that sparked my love for “Nervy”. I wanted to learn to play so that one day I could perform my favorite songs myself. I mostly taught myself, and sometimes my dad helped me. The first song I learned on guitar was “Rayony-Kvartaly” by the band “Zveri”. Playing guitar helps me relax, clear my head, and unwind. I enjoy learning new songs and playing them as well as I can. If I had the chance to play with a famous artist, I would definitely choose “Nervy” and perform the song “On the Raves” with them.
+                        </p>
+                        <p>
+                            I really love music and consider myself a music lover, even though my playlist most often contains “Nervy”, MILKOVSKYI, “Mimo Vselennoy”, and “Kis-Kis”. Music plays an important role in my life and often helps improve my mood.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">💃</div>
+                        <div class="timeline-heading">Dance</div>
+                        <p>
+                            Besides music, dance has also been an important part of my life. In September 2024, I started taking hip-hop classes. It turned out to be one of the best decisions of my life, because I joined a wonderful group and met great people. At the end of November 2024, we performed at a competition together. That day stayed with me forever, and my friends and I still remember it with a smile. Later I had to stop dancing because of my move to Germany, but the memories of that time remain very warm.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">📚</div>
+                        <div class="timeline-heading">School in Germany</div>
+                        <p>
+                            One of the most memorable periods for me was from September 2024 to December 2025. That was when many important things happened: I started dancing, met many people, and made real friends. Another important step was March 2025, when I first went to a German school and joined an integration class. There I met my close friends. I especially loved cooking and technology classes. In cooking, we learned to make different dishes, and in technology we worked with wood and made various things with our own hands.
+                        </p>
+                        <p>
+                            The easiest subjects for me at school were foreign languages — English and German. In general, studying in Germany felt easier than in Russia or Serbia, so I didn’t have many subjects that caused serious difficulties.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">💛</div>
+                        <div class="timeline-heading">Friendship</div>
+                        <p>
+                            I’ve always found it easy to meet new people, so I now have many friends and good acquaintances. I have several circles of friends, and I feel very comfortable and happy in each of them. I met my closest friend in Serbia when I first came to a new school. We didn’t become close right away; there were small quarrels and misunderstandings, but over time we became like sisters. We’ve been friends for four years, and I truly value our friendship.
+                        </p>
+                        <p>
+                            I usually communicate with my friends from Serbia by chat, while with my friends from Germany we often go out together and see each other every day at school. One of my happiest memories is the day when we met at my friend’s house and played Monopoly to classical music. We laughed a lot and still remember that day.
+                        </p>
+                        <p>
+                            The thing I value most in people is openness, tact, and a willingness to communicate. It’s important to me that a person is ready to keep in touch, shows initiative, and isn’t afraid to talk about themselves. That’s when it becomes easier for me to trust them. I truly value my friends simply because they are there for me. They always make my days brighter and help me cope with difficulties.
+                        </p>
+                        <p>
+                            Friendship is one of the most important parts of life for me. Almost every day I talk to my friends, laugh, walk, play, and spend time with them. It’s thanks to them that many moments become truly happy.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">🌍</div>
+                        <div class="timeline-heading">Home</div>
+                        <p>
+                            Over the years of living in different countries, I realized that home is not a specific place. For me, home is the people around me with whom I feel calm, comfortable, and able to be myself.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer is-dark">
+        <div class="content has-text-centered">
+            <p>This site was created by Maria Biryukova with the help of an AI helper</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.getElementById(burger.dataset.target);
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+

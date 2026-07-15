@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über mich</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        html, body {
+            min-height: 100vh;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        body > .section {
+            flex: 1;
+        }
+        .footer.is-dark {
+            background-color: #363636;
+            color: #fff;
+            padding: 1.5rem;
+        }
+        .navbar-item {
+            font-size: 1.25rem;
+            padding: 0.75rem 1.5rem;
+        }
+        .content p {
+            font-size: 1.25rem;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-top: 2rem;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0.75rem;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #dbdbdb;
+            border-radius: 2px;
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2.5rem;
+        }
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+        .timeline-marker {
+            position: absolute;
+            left: -2.5rem;
+            top: 0.25rem;
+            width: 1.75rem;
+            height: 1.75rem;
+            border-radius: 50%;
+            background: #363636;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            z-index: 1;
+        }
+        .timeline-heading {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #363636;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #dbdbdb;
+        }
+        @media screen and (max-width: 768px) {
+            .hero-body {
+                padding: 1.5rem;
+            }
+            .section {
+                padding: 1rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero is-dark is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Über mich</h1>
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="mainNavbar" class="navbar-menu">
+            <div class="navbar-end" style="flex-grow:1;justify-content:center;">
+                <a class="navbar-item" href="index.html">Startseite</a>
+                <a class="navbar-item is-active" href="aboutme.html"><strong>Über mich</strong></a>
+                <a class="navbar-item" href="social.html">Soziale Netzwerke</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="content">
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">🏠</div>
+                        <div class="timeline-heading">Anfang — Moskau</div>
+                        <p>
+                            Ich bin am 26.02.2011 in Moskau, Russland, geboren. Dort habe ich etwa elf Jahre gelebt, danach zwei Jahre in Serbien, und jetzt lebe ich in Deutschland. Jeder Umzug wurde zu einer wichtigen Etappe in meinem Leben und brachte mir neue Erfahrungen, neue Freunde und Erinnerungen.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">🎸</div>
+                        <div class="timeline-heading">Musik</div>
+                        <p>
+                            Nach dem Umzug nach Serbien habe ich zum ersten Mal angefangen, Gitarre zu spielen, und das hat mich sehr interessiert. Meine Musikliebe wurde besonders von der Band „Nervy“ und Zhenya Milkovsky beeinflusst. Zuerst habe ich sie nicht oft gehört, aber später begannen ihre Songs fast jeden Tag in meinem Leben aufzutauchen. Der Song „Glück“ war das Stück, das meine Liebe zu „Nervy“ weckte. Ich wollte lernen, so zu spielen, dass ich eines Tages meine Lieblingslieder selbst performen kann. Ich habe es größtenteils selbst gelernt, manchmal half mir mein Vater. Der erste Song, den ich auf der Gitarre lernte, war „Rayony-Kvartaly“ von der Band „Zveri“. Gitarre spielen hilft mir, mich zu entspannen, meinen Kopf freizubekommen und abzuschalten. Ich lerne gern neue Songs und spiele sie so gut ich kann. Wenn ich die Chance hätte, mit einem berühmten Künstler zu spielen, würde ich definitiv „Nervy“ wählen und mit ihnen den Song „On the Raves“ performen.
+                        </p>
+                        <p>
+                            Ich liebe Musik sehr und betrachte mich als Musikliebhaberin, auch wenn in meiner Playlist am häufigsten „Nervy“, MILKOVSKYI, „Mimo Vselennoy“ und „Kis-Kis“ zu finden sind. Musik nimmt einen wichtigen Platz in meinem Leben ein und hilft mir oft, meine Stimmung zu verbessern.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">💃</div>
+                        <div class="timeline-heading">Tanz</div>
+                        <p>
+                            Neben Musik war Tanz ein wichtiger Teil meines Lebens. Im September 2024 habe ich mit Hip-Hop angefangen. Es war eine der besten Entscheidungen meines Lebens, denn ich kam in eine wunderbare Gruppe und lernte großartige Menschen kennen. Ende November 2024 traten wir gemeinsam bei einem Wettbewerb auf. Dieser Tag bleibt für immer in meiner Erinnerung, und ich und meine Freunde erinnern uns noch immer mit einem Lächeln daran. Später musste ich wegen des Umzugs nach Deutschland mit dem Tanzen aufhören, aber die Erinnerungen an diese Zeit sind sehr warm geblieben.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">📚</div>
+                        <div class="timeline-heading">Schule in Deutschland</div>
+                        <p>
+                            Besonders erinnerungswürdig für mich war die Zeit von September 2024 bis Dezember 2025. Damals passierten viele wichtige Dinge: Ich begann mit dem Tanzen, lernte viele Menschen kennen und fand echte Freunde. Ein weiterer wichtiger Schritt war der März 2025, als ich zum ersten Mal auf eine deutsche Schule ging und in eine Integrationsklasse kam. Dort traf ich meine engen Freundinnen. Besonders mochten mir die Unterrichtsfächer Kochen und Technik. Beim Kochen lernten wir verschiedene Gerichte zubereiten, und in Technik arbeiteten wir mit Holz und bauten verschiedene Dinge mit unseren Händen.
+                        </p>
+                        <p>
+                            An der Schule fielen mir am leichtesten die Fremdsprachen — Englisch und Deutsch —. Insgesamt erschien mir das Lernen in Deutschland leichter als in Russland oder Serbien, deshalb hatte ich praktisch keine Fächer, die große Schwierigkeiten bereiteten.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">💛</div>
+                        <div class="timeline-heading">Freundschaft</div>
+                        <p>
+                            Es ist mir immer leicht gefallen, neue Menschen kennenzulernen, deshalb habe ich heute viele Freunde und gute Bekannte. Ich habe mehrere Freundeskreise, und in jedem von ihnen fühle ich mich sehr wohl und habe Spaß. Meine engste Freundin habe ich in Serbien kennengelernt, als ich gerade auf eine neue Schule gekommen war. Wir wurden nicht sofort richtig vertraut; es gab kleine Streitereien und Missverständnisse, aber mit der Zeit wurden wir praktisch wie Schwestern. Wir sind schon vier Jahre lang befreundet, und ich schätze unsere Freundschaft sehr.
+                        </p>
+                        <p>
+                            Mit meinen Freunden aus Serbien spreche ich meistens per Chat, und mit meinen Freunden aus Deutschland gehen wir oft zusammen raus und sehen uns jeden Tag in der Schule. Eine meiner lustigsten Erinnerungen ist der Tag, an dem wir uns bei meiner Freundin zu Hause trafen und Monopoly zu klassischer Musik gespielt haben. Wir haben viel gelacht und erinnern uns noch immer an diesen Tag.
+                        </p>
+                        <p>
+                            Am meisten schätze ich an Menschen Offenheit, Taktgefühl und den Wunsch, zu kommunizieren. Es ist mir wichtig, dass jemand bereit ist, Kontakt zu halten, Initiative zu zeigen und nicht davor zurückschreckt, über sich selbst zu sprechen. Dann fällt es mir leichter, ihm zu vertrauen. Ich schätze meine Freunde vor allem deshalb, weil sie für mich da sind. Sie machen meine Tage immer heller und helfen mir, Schwierigkeiten zu meistern.
+                        </p>
+                        <p>
+                            Für mich ist Freundschaft einer der wichtigsten Teile des Lebens. Fast jeden Tag spreche ich mit Freunden, lache, gehe spazieren, spiele und verbringe Zeit mit ihnen. Gerade durch sie werden viele Momente wirklich glücklich.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">🌍</div>
+                        <div class="timeline-heading">Zuhause</div>
+                        <p>
+                            Über die Jahre, in denen ich in verschiedenen Ländern gelebt habe, habe ich erkannt, dass Zuhause kein bestimmter Ort ist. Für mich sind Zuhause die Menschen, bei denen ich mich ruhig, wohl und ich selbst fühlen kann.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer is-dark">
+        <div class="content has-text-centered">
+            <p>Diese Website wurde von Maria Biryukova mit Hilfe eines KI-Assistenten erstellt</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.getElementById(burger.dataset.target);
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+

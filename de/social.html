@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soziale Netzwerke</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .social-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+        .social-outer {
+            box-shadow: none;
+            background: transparent;
+        }
+        .social-button {
+            width: calc((100% - 20%) / 3);
+            aspect-ratio: 1 / 1;
+            height: auto !important;
+            border-radius: 20px;
+            padding: 0 !important;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff !important;
+            box-shadow: none;
+            border: none;
+        }
+        .social-button img {
+            width: 80%;
+            height: 80%;
+            object-fit: contain;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+        .social-button:hover img {
+            opacity: 1;
+        }
+        html, body {
+            min-height: 100vh;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        body > .section {
+            flex: 1;
+        }
+        .footer.is-dark {
+            background-color: #363636;
+            color: #fff;
+            padding: 1.5rem;
+        }
+        .navbar-item {
+            font-size: 1.25rem;
+            padding: 0.75rem 1.5rem;
+        }
+        @media screen and (max-width: 768px) {
+            .social-row {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.75rem;
+            }
+            .social-button {
+                width: 50%;
+            }
+            .hero-body {
+                padding: 1.5rem;
+            }
+            .section {
+                padding: 1rem 1.5rem;
+            }
+            .social-outer {
+                padding: 0.5rem;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero is-dark is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Meine sozialen Netzwerke</h1>
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="mainNavbar" class="navbar-menu">
+            <div class="navbar-end" style="flex-grow:1;justify-content:center;">
+                <a class="navbar-item" href="index.html">Startseite</a>
+                <a class="navbar-item" href="aboutme.html">Über mich</a>
+                <a class="navbar-item is-active" href="social.html"><strong>Soziale Netzwerke</strong></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+
+            <div class="box social-outer has-text-centered">
+                <div class="social-row">
+                    <a class="button is-light social-button" href="https://www.instagram.com/masvezzx/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram logo">
+                    </a>
+                    <a class="button is-light social-button" href="https://t.me/masvezx" target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram logo">
+                    </a>
+                    <a class="button is-light social-button" href="https://www.tiktok.com/@mmmaryxxc" target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_icon.svg" alt="TikTok logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer is-dark">
+        <div class="content has-text-centered">
+            <p>Diese Website wurde von Maria Biryukova mit Hilfe eines KI-Assistenten erstellt</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.navbar-burger');
+            const menu = document.getElementById(burger.dataset.target);
+            burger.addEventListener('click', () => {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
