@@ -4,7 +4,7 @@ import { AIProjectClient } from "@azure/ai-projects";
 
 const endpoint = "https://masvezx.services.ai.azure.com/api/projects/praktikum";
 const agentName = "masvezx";
-const agentVersion = "10";
+const agentVersion = "12";
 const port = process.env.PORT || 3000;
 
 const projectClient = new AIProjectClient(endpoint, new DefaultAzureCredential());
